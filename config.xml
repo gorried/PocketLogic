@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.necha.pocketlogic"
+        versionCode="10" 
+        version   = "1.0.0">
+    <name>Pocket Logic</name>
+
+    <description>
+        The original open source life calculation platform
+    </description>
+
+    <author href="https://build.phonegap.com" email="aaronnech@gmail.com">
+        Aaron Nech, Daniel Gorrie
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+
+
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+
+
+    <access origin="http://pocketlogic.herokuapp.com/" subdomains="true" />
+
+    <icon src="icon.png" />
+</widget>
