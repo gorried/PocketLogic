@@ -10,4 +10,6 @@ function Field(json) {
 	this.max = json.max;
 	this.varName = json.var_name;
 	this.options = json.options;
+	this.falseName = json.false_name;
+	this.trueName = json.true_name
 };
