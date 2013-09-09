@@ -132,12 +132,8 @@ p{
 }
 
 .separator {
-  height: 15px;
 }
 
-select {
-  margin-top: -15px;
-}
 
 .midbar {
 position: relative;
@@ -190,6 +186,10 @@ position: relative;
 }
 .ui-li-heading{
 padding-top:5px;
+}
+
+.ui-select{
+  margin-top: -20px;
 }
 
 div.ui-slider{
@@ -261,7 +261,7 @@ div.ui-slider{
   position: relative;
   display: block;
   margin:auto;
-  margin-top:10px;
+  margin-top:40px;
 
  
     width: 100%;
@@ -345,10 +345,10 @@ div.ui-slider{
 #resultBox{
   background-color:#fff;
   margin-top:30px;
-  height: 50px;
+  min-height: 50px;
   padding-top: 5px;
   border: 2px solid #615a95;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 .centerit{
   width: 250px;
