@@ -58,15 +58,15 @@ function renderCalc(calc){
 
 		out += '<div class="inputPair" data-role="listview"><div class="topbar2" ><p class="ui-li-desc">' + value.name + '</p></div>';
 		if(value.type == "slider"){
-			out += '<div class="midbar2"><input class="field" type="range" step="'+ ((value.max+1)-value.min)/100 +'" name="' + value.varName + '" id="' + value.varName + '" value="' + value.min + '" min="' + value.min + '" max="' + value.max + '"></div><div id="separator"></div></div>';
+			out += '<div class="midbar2"><input class="field" type="range" step="'+ ((value.max+1)-value.min)/100 +'" name="' + value.varName + '" id="' + value.varName + '" value="' + value.min + '" min="' + value.min + '" max="' + value.max + '"></div></div><div id="separator"></div>';
 		} else if(value.type == "select") {
 			var options = '';
 			$.each(value.options, function(key, opt) {
 				options += '<option value="' + opt.value + '">' + opt.name + '</option>';
 			});
-			out += '<div class="midbar2"><select class="field select" name="' + value.varName + '" id="' + value.varName + '">' + options + '</select></div><div id="separator"></div></div>';
+			out += '<div class="midbar2"><select class="field select" name="' + value.varName + '" id="' + value.varName + '">' + options + '</select></div></div><div id="separator"></div>';
 		} else if(value.type == "bool") {
-			out += '<div class="midbar2"><select class="field bool" name="' + value.varName + '" id="' + value.varName + '" data-role="slider"><option value="' + value.f + '">' + value.falseName + '</option><option value="' + value.t + '">' + value.trueName + '</option></select></div><div id="separator"></div></div>';
+			out += '<div class="midbar2"><select class="field bool" name="' + value.varName + '" id="' + value.varName + '" data-role="slider"><option value="' + value.f + '">' + value.falseName + '</option><option value="' + value.t + '">' + value.trueName + '</option></select></div></div></div><div id="separator">';
 		}
 
 	});

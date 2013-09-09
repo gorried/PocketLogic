@@ -131,6 +131,13 @@ p{
    padding-left:14px;
 }
 
+.separator {
+  height: 15px;
+}
+
+select {
+  margin-top: -15px;
+}
 
 .midbar {
 position: relative;
